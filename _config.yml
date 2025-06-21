@@ -1,3 +1,19 @@
 title: "Software(Blockchain and AI) Developer Portfolio"
+author:
+  name: psychoplasma
 theme: minima
 description: "Portfolio showcasing blockchain, smart contracts, and AI projects."
+
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+
+minima:
+  skin: auto
+  social_links:
+    - title: Github
+      icon: github
+      url: "https://github.com/psychoplasma"
+    - title: LinkedIn
+      icon: linkedin
+      url: "https://www.linkedin.com/in/mustafa-morca-a2472931/"

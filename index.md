@@ -5,7 +5,7 @@ title: "Software(Blockchain and AI) Developer Portfolio"
 
 # Hi, I'm Mustafa 👋
 
-Welcome to my portfolio! I am a software developer from Turkey and have been living in South Korea for the last 10 years. I have experience in Blockchain, Smart Contracts, and AI applications with solid experience at software development over 13 years.
+Welcome to my portfolio! I am a software developer from Turkey and have been living in South Korea for the last 10 years. Also looking for remote work possibilities.
 
 ## About Me
 
@@ -58,6 +58,8 @@ Fullstack blockchain developer specializing in Security Token Offering platforms
 - Agentic-RAG GenAI application development utilizing Langchain
 - MCP server development (local and remote)
 
+---
+
 ### Co-founder | PandaLabs
 
 **Jan 2022 - Feb 2024**
@@ -88,6 +90,8 @@ Co-founded blockchain technology company providing end-to-end consulting service
 - System performance tracking and optimization
 - Infrastructure reliability and uptime management
 
+---
+
 ### Senior Blockchain Developer | [Bithumb Cryptocurrency Exchange](https://www.bithumb.com)
 
 **May 2019 - Jan 2021**
@@ -116,11 +120,15 @@ Senior blockchain developer at cryptocurrency exchange platform, architecting se
 - HSM-backed custody system implementation
 - Hardware security module integration
 
+---
+
 ### Blockchain Developer | [SPIN Protocol](https://www.womanstalk.co.kr/)
 
 **Nov 2018 - May 2019**
 
 Developed comprehensive Dapp ecosystem for e-commerce and influencer marketing, including Ethereum wallet integration, smart contract development, and AWS cloud architecture design.
+
+---
 
 ### Blockchain Developer | [SovereignWallet Network](https://sovereignwallet.network)
 
@@ -128,17 +136,23 @@ Developed comprehensive Dapp ecosystem for e-commerce and influencer marketing, 
 
 Built Ethereum wallet mobile application with integrated smart contract functionality for decentralized financial services platform
 
+---
+
 ### Senior Software Developer | [AJU-QMS](http://www.ajuqms.co.kr/main)
 
 **Sep 2017 - May 2018**
 
 Developed mobile game testing solutions and comprehensive mobile application development for gaming industry quality assurance.
 
+---
+
 ### Senior Software Developer | [AVL (Turkey)](https://www.avl.com/en)
 
 **April 2013 - August 2015**
 
 Created automotive functional testing systems, EV smart navigation solutions, and mobile applications for automotive industry innovation.
+
+---
 
 ### Electrical & Electronics Engineer | [ASELSAN (Turkey)](https://www.aselsan.com/en)
 
@@ -234,7 +248,7 @@ Developed embedded software solutions and conducted infrared camera system testi
 
 ---
 
-## PRJECTS
+## PROJECTS
 
 - [Agentic-RAG GenAI Application](https://github.com/psychoplasma/agentic-rag-app/tree/main/agent)
   - **Description**: GenAI for code suggestion based on specific code ingested in Vector store
