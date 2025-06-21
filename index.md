@@ -199,6 +199,7 @@ Developed embedded software solutions and conducted infrared camera system testi
 - PDF, Excel, table parsing with Unstructed, PyMuPDF and Panda dataframes
 - LLM tooling
 - Prompt engineering
+- Short-time and long-time memory
 - Multi-agent application development with custom agent pipeline and Re-act agents of Langgraph
 
 ### Blockchain Technologies
