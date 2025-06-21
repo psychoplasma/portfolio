@@ -198,6 +198,7 @@ Developed embedded software solutions and conducted infrared camera system testi
 - Document chunking strategies: Recursive, Semantic, Custom LLM based
 - PDF, Excel, table parsing with Unstructed, PyMuPDF and Panda dataframes
 - LLM tooling
+- Prompt engineering
 - Multi-agent application development with custom agent pipeline and Re-act agents of Langgraph
 
 ### Blockchain Technologies
