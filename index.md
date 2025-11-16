@@ -21,7 +21,7 @@ I'm passionate about building high-impact software, especially at the intersecti
 
 ## PROFESSIONAL SUMMARY
 
-Experienced Senior Blockchain Developer with over 7 years of expertise in blockchain technology, smart contracts, and decentralized applications (over 13 years of experience in software development). Proven track record in leading and developing innovative blockchain solutions with a strong background in software development and cloud architecture. Hands-on experience at  GenAI application development and cutting-edge AI technologies. Seeking to leverage my skills in a challenging and dynamic environment.
+Experienced Senior Blockchain Developer with over 7 years of expertise in blockchain technology, smart contracts, and decentralized applications (over 13 years of experience in software development). Proven track record in leading and developing innovative blockchain solutions with a strong background in software development and cloud architecture. Hands-on experience at GenAI application development and cutting-edge AI technologies. Seeking to leverage my skills in a challenging and dynamic environment.
 
 ---
 
@@ -31,7 +31,21 @@ Experienced Senior Blockchain Developer with over 7 years of expertise in blockc
 
 **Feb 2024 - now**
 
-Fullstack blockchain developer specializing in Security Token Offering platforms, Defi systems, smart contract engineering. Hands-on experience at AI application/service development with most-recent technologies like Langchain, Huggingface, LlamaIndex etc.
+**Financial Analysis Report Generation for Stock Companies:**
+
+I developed RAG-agentic generative AI application for our client, Korea Investor Relations Service(KIRS - 한국IR협의회). Some sample reports can be seen [here](https://www.kirs.or.kr/research/ai_report.html). The system includes data ingestion pipeline for RAG and report generation pipeline built with FastAPI and Langchain(Langgraph) by utilizing multiple LLM providers(Google's Gemini and Anthropic's Claude). The system is deployed on Google Cloud. Pipelines are running on Cloud Run Jobs with triggers coming from EventArc with file upload to a specific bucket in Cloud storage. FastAPI serves frontend API, generation content and pipeline triggering APIs which run on Cloud Run service.
+
+**Secturity Token Offering Platform:** 
+
+I developed STO contract systems and blockchain backend for one of the prestigious banks in Korea(as our primary funding client which starts with Shin). Also I individually attended integration tests with Korea Securities Depository(한국예탁결제원) for our STO contract system on our permissioned blockchain (Hyperledger Besu customized for high transaction throughput). STO token contract system has been built by utilizing ERC1400 token standard together with UUPS and Beacon Proxy for upgradeability. The backend system is developed on Spring Boot with Kotlin. The backend system manages system transactions which includes nonce ordering for sequential transaction broadcasting, transaction tracking and transaction retrial.
+
+**Token Bridging-Swapping System:**
+
+For our funding client, I'm developing token swap platform which is currently in PoC stage. The system bridges public networks to our permissioned blockchain for stable coins (USDC for the time being) which enables crypto holder clients exchange stocks with their cryptocurrencies. USDC deposits to our swap/bridge contract on public chain trigger automatic token issue/mint with equal amount on our permissioned blockchain. Also the bridging system watches and automatically balances liquidities on both side of the system(public-permission chains). Contract system is utilizing UUPS for upgradeability. The bridging system consists of two applications as standalone and API server built with NestJS.
+
+**NFT Minting Platfrom:**
+
+I developed NFT minting system for our stock exchange client. The system automatically mints community NFTs according to user's level in the community system like reaching to certain amount of trade volume, number of transactions, writting contents, dropping comments, getting likes etc. The backend system gets updates from the community system and mints, also manages blockchain transactions. It is developed as NestJS application.
 
 #### _Smart Contract Development_
 
@@ -51,12 +65,15 @@ Fullstack blockchain developer specializing in Security Token Offering platforms
 - Kubernetes application orchestration
 - Infrastructure as Code with Terraform and Helm
 - Google Cloud and Oracle Cloud deployment
-- CI/CD with ArgoCD and Github Actions
+- CI/CD with ArgoCD, Github Actions and Google Cloud Build
 
 #### _AI Service Development_
 
 - Agentic-RAG GenAI application development utilizing Langchain
-- MCP server development (local and remote)
+- Data ingestion pipeline
+- Vector search with PostgreSQL + pgvector backend
+- PDF parsing and content chunking by section-aware recursive sentence chunking
+- MCP server development (local and remote) to serve RAG system directly to business clients
 
 ---
 
@@ -281,7 +298,7 @@ Developed embedded software solutions and conducted infrared camera system testi
 
 ## HOBBIES AND INTERESTS
 
-- Contribution to Open-source projects
+- Contribution to Open-source projects, my PRs can be seen here;
   - [Web3j](https://github.com/LFDT-web3j/web3j/pull/2173)
   - [Blockscout](https://github.com/blockscout/helm-charts/pull/67)
 - Domain Driven Design
