@@ -33,25 +33,33 @@ Experienced Senior Blockchain Developer with over 7 years of expertise in blockc
 
 **Financial Analysis Report Generation for Stock Companies:**
 
-I developed RAG-agentic generative AI application for our client, Korea Investor Relations Service(KIRS - 한국IR협의회). Some sample reports can be seen [here](https://www.kirs.or.kr/research/ai_report.html). The system includes data ingestion pipeline for RAG and report generation pipeline built with FastAPI and Langchain(Langgraph) by utilizing multiple LLM providers(Google's Gemini and Anthropic's Claude). The system is deployed on Google Cloud. Pipelines are running on Cloud Run Jobs with triggers coming from EventArc with file upload to a specific bucket in Cloud storage. FastAPI serves frontend API, generation content and pipeline triggering APIs which run on Cloud Run service.
+I developed RAG-agentic generative AI application for our client, Korea Investor Relations Service(KIRS - 한국IR협의회). Some sample reports can be seen [here](https://www.kirs.or.kr/research/ai_report.html). The system includes data ingestion pipeline for RAG and report generation pipeline built with FastAPI and Langchain(Langgraph) by utilizing multiple LLM providers(Google's Gemini and Anthropic's Claude). The system is deployed on Google Cloud. Pipelines are running on Cloud Run Jobs with triggers coming from EventArc with file upload to a specific bucket in Cloud storage. FastAPI serves resource API, trigger API for generation pipeline. Backend runs on Cloud Run service. Tech stack includes FastAPI, SQLAlchemy, Postgresql/PGVector, Langchain/Langgraph, Terraform(infra management, CI/CD pipeline).
 
-**Secturity Token Offering Platform:** 
+**Secturity Token Offering Platform:**
 
-I developed STO contract systems and blockchain backend for one of the prestigious banks in Korea(as our primary funding client which starts with Shin). Also I individually attended integration tests with Korea Securities Depository(한국예탁결제원) for our STO contract system on our permissioned blockchain (Hyperledger Besu customized for high transaction throughput). STO token contract system has been built by utilizing ERC1400 token standard together with UUPS and Beacon Proxy for upgradeability. The backend system is developed on Spring Boot with Kotlin. The backend system manages system transactions which includes nonce ordering for sequential transaction broadcasting, transaction tracking and transaction retrial.
+I developed STO contract systems and blockchain backend for one of the prestigious banks in Korea(as our primary funding client which starts with Shin). Also I individually attended integration tests with Korea Securities Depository(한국예탁결제원) for our STO contract system on our permissioned blockchain (Hyperledger Besu customized for high transaction throughput). STO token contract system has been built by utilizing ERC1400 token standard together with UUPS and Beacon Proxy for upgradeability. The backend system manages system transactions which includes nonce ordering for sequential transaction broadcasting, transaction tracking and transaction retrial. Tech stack includes Spring Boot with Kotlin, MySQL, Redis, Kafka and Solidity for smart contracts.
 
 **Token Bridging-Swapping System:**
 
-For our funding client, I'm developing token swap platform which is currently in PoC stage. The system bridges public networks to our permissioned blockchain for stable coins (USDC for the time being) which enables crypto holder clients exchange stocks with their cryptocurrencies. USDC deposits to our swap/bridge contract on public chain trigger automatic token issue/mint with equal amount on our permissioned blockchain. Also the bridging system watches and automatically balances liquidities on both side of the system(public-permission chains). Contract system is utilizing UUPS for upgradeability. The bridging system consists of two applications as standalone and API server built with NestJS.
+For our funding client, I'm developing token swap platform which is currently in PoC stage. The system bridges public networks to our permissioned blockchain for stable coins (USDC for the time being) which enables crypto holder clients exchange stocks with their cryptocurrencies. USDC deposits to our swap/bridge contract on public chain trigger automatic token issue/mint with equal amount on our permissioned blockchain. Also the bridging system watches and automatically balances liquidities on both side of the system(public and permissioned chains). Contract system is utilizing UUPS for upgradeability. The bridging system consists of two standalone applications and an API server. Tech stack includes NestJS, Prisma with Postgresql and Solidity for smart contracts.
 
 **NFT Minting Platfrom:**
 
-I developed NFT minting system for our stock exchange client. The system automatically mints community NFTs according to user's level in the community system like reaching to certain amount of trade volume, number of transactions, writting contents, dropping comments, getting likes etc. The backend system gets updates from the community system and mints, also manages blockchain transactions. It is developed as NestJS application.
+I developed NFT minting system for our stock exchange client. The system automatically mints community NFTs according to user's level in the community system like reaching to certain amount of trade volume, number of transactions, writting contents, dropping comments, getting likes etc. The backend system gets updates from the community system and mints NFT and also manages blockchain transactions. Tech stack includes NestJS, Prisma with Postgresql and Solidity for smart contracts.
+
+#### _AI Service Development_
+
+- Agentic-RAG GenAI application development utilizing Langchain
+- Data ingestion pipeline
+- Vector search with PostgreSQL + PGVector backend
+- PDF parsing and content chunking by section-aware recursive sentence chunking
+- MCP server development (local and remote) to serve RAG system directly to business clients
 
 #### _Smart Contract Development_
 
 - Multi-standard token development (ERC-20, ERC-721, ERC-1400)
 - Advanced proxy patterns (UUPS, Diamond proxies)
-- Token swap mechanisms and Central Securities Depository systems
+- Token swap mechanisms and Central Securities Depository system development
 - Smart contract auditing and security assessment
 
 #### _Enterprise Infrastructure and Blockchain Services_
@@ -59,21 +67,14 @@ I developed NFT minting system for our stock exchange client. The system automat
 - Hyperledger Besu private blockchain deployment and maintenance
 - Custom blockchain explorer development
 - Transaction lifecycle management systems
+- Nonce management system development
 
 #### _Cloud & DevOps_
 
 - Kubernetes application orchestration
 - Infrastructure as Code with Terraform and Helm
-- Google Cloud and Oracle Cloud deployment
+- Google Cloud and Oracle Cloud platform services
 - CI/CD with ArgoCD, Github Actions and Google Cloud Build
-
-#### _AI Service Development_
-
-- Agentic-RAG GenAI application development utilizing Langchain
-- Data ingestion pipeline
-- Vector search with PostgreSQL + pgvector backend
-- PDF parsing and content chunking by section-aware recursive sentence chunking
-- MCP server development (local and remote) to serve RAG system directly to business clients
 
 ---
 
@@ -196,16 +197,14 @@ Developed embedded software solutions and conducted infrared camera system testi
 
 ### Programming Languages
 
-- JVM languages (+10 years): Java, Kotlin
 - Javascript (+8 years)
 - TypeScript (+6 years)
 - Solidity (+7 years)
-- Shell Scripting (+7 years)
-- Go (+2 years)
 - Python (+2 years)
-- Elixir
+- JVM languages (+6 years): Java, Kotlin
+- Go (+2 years)
+- Shell Scripting
 - C/C++
-- C#
 
 ### AI/LLM Technologies
 
@@ -269,9 +268,12 @@ Developed embedded software solutions and conducted infrared camera system testi
 
 ## PROJECTS
 
+- [NonceQ](https://github.com/psychoplasma/nonceq)
+  - **Description:** Nonce management system for Ethereum transactions to ensure sequential transaction broadcasting from high-frequency trading systems
+  - **Tech:** Kotlin and Redis for caching
 - [Agentic-RAG GenAI Application](https://github.com/psychoplasma/agentic-rag-app/tree/main/agent)
   - **Description**: GenAI for code suggestion based on specific code ingested in Vector store
-  - **Tech:** Langchain, Google VertexAI, PGVector, FastAPI, Python
+  - **Tech:** Langchain, Langgraph, Google VertexAI, PGVector, FastAPI, Python
 - [Blockchain address/transaction tracking application](https://github.com/psychoplasma/crypto-balance-bot)
   - **Description:** Balance tracking and notification system for Ethereum and Bitcoin
   - **Tech:** Frontend with Next.js, Backend with Go and Nest.js, datastore as MongoDB, Domain-driven-design applied
@@ -298,7 +300,7 @@ Developed embedded software solutions and conducted infrared camera system testi
 
 ## HOBBIES AND INTERESTS
 
-- Contribution to Open-source projects, my PRs can be seen here;
+- Contribution to Open-source projects;
   - [Web3j](https://github.com/LFDT-web3j/web3j/pull/2173)
   - [Blockscout](https://github.com/blockscout/helm-charts/pull/67)
 - Domain Driven Design
